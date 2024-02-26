@@ -29,30 +29,27 @@ public class Block {
         this.height = array[2];
     }
 
-    int getWidth(){
+    int getWidth() {
         return width;
     }
+
     int getLength() {
         return length;
     }
 
-    int getHeight(){
+    int getHeight() {
         return height;
     }
 
-    int getVolume(){
+    int getVolume() {
         int volume = width * length * height;
         return volume;
     }
 
-    int getSurfaceArea (){
+    int getSurfaceArea() {
         int surface = 2 * (width * length) + 2 * (width * height) + 2 * (length * height);
         return surface;
     }
-
-
-
-
 
 
 }

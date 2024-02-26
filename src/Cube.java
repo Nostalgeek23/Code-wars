@@ -18,7 +18,6 @@ public class Cube {
             return side;
         }
 
-
          void setSide(int num) {
             this.side = num;
         }

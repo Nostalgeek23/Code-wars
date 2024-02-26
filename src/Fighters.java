@@ -28,11 +28,11 @@ public class Fighters {
         if (firstAttacker.equals(fighter1.name)) {
             while (fighter1.health > 0 && fighter2.health > 0) {
                 fighter2.health = fighter2.health - fighter1.damagePerAttack;
-                if (fighter2.health < 0) {
+                if (fighter2.health <= 0) {
                     break;
                 }
                 fighter1.health = fighter1.health - fighter2.damagePerAttack;
-                if (fighter1.health < 0) {
+                if (fighter1.health <= 0) {
                     break;
                 }
             }
@@ -41,11 +41,11 @@ public class Fighters {
         if (firstAttacker.equals(fighter2.name)) {
             while (fighter1.health > 0 && fighter2.health > 0) {
                 fighter1.health = fighter1.health - fighter2.damagePerAttack;
-                if (fighter1.health < 0){
+                if (fighter1.health <= 0){
                     break;
                 }
                 fighter2.health = fighter2.health - fighter1.damagePerAttack;
-                if (fighter2.health < 0) {
+                if (fighter2.health <= 0) {
                     break;
                 }
             }
